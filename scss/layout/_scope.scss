@@ -1,0 +1,33 @@
+.scope{
+    padding-top: 0;
+}
+
+
+.scope-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.scope-list__item {
+    position: relative;
+}
+
+.scope-list__box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: inherit;
+    line-height: 16px;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    color: $primary-white-color;
+}
+

@@ -1,0 +1,38 @@
+.backdrop.hidden .modal {
+  opacity: 0;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  background-color: $primary-white-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: $box-shadowing-card;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity $transition-specs;
+  padding: 40px 40px;
+}
+
+.modal__button-close {
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: $primary-white-color;
+  top: 8px;
+  right: 8px;
+  transition: fill $transition-specs;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.modal__icon {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}

@@ -1,0 +1,122 @@
+.modal__title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  text-align: center;
+}
+
+.modal-form__box {
+  text-align: left;
+
+  width: 448px;
+}
+
+.modal-form__label {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.modal-form__span {
+  position: relative;
+  transition: fill $transition-specs;
+}
+
+.modal-form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  transition: border-color $transition-specs;
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+.modal-form__prefix {
+  padding-bottom: 4px;
+  font-size: 12px;
+  color: $secondary-text-color;
+}
+
+.modal-form__comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondary-text-color;
+    opacity: 0.5;
+  }
+}
+.modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+  text-align: center;
+  color: $secondary-text-color;
+  transition: background-color $transition-specs;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000000;
+    border-radius: 2px;
+    cursor: pointer;
+
+    .modal-form-checkbox:checked + & {
+      background-image: url(../images/checked.svg);
+      background-color: $accent-color;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      border-color: transparent;
+      transition: background-color $transition-specs, border $transition-specs;
+    }
+
+    .modal-form-checkbox:focus + & {
+      border: 2px solid $accent-color;
+    }
+  }
+}
+
+.modal-form-checkbox-link {
+  color: $accent-color;
+}

@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: inherit;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: {
+    family: $font-family-default;
+    weight: 400;
+    size: 14px;
+  }
+  background-color: $primary-white-color;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+}
+
+svg {
+  fill: inherit;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.uptitle {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  color: $primary-text-color;
+  padding-bottom: 50px;
+}

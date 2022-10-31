@@ -1,0 +1,26 @@
+.team-list__item {
+  box-shadow: $box-shadowing-card;
+  border-radius: 0px 0px 4px 4px;
+
+  background: $primary-white-color;
+}
+
+.team-meta {
+  padding: 30px 0px;
+}
+
+.team-meta__name {
+  font-size: inherit;
+  font-weight: 500;
+  color: $primary-text-color;
+  margin-bottom: 10px;
+}
+
+.team-meta__position {
+  color: $secondary-text-color;
+}
+
+.team-meta .social-list {
+  padding: 0px 32px;
+  margin-top: 16px;
+}

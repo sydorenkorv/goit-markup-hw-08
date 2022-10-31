@@ -1,0 +1,29 @@
+.client-list {
+  display: flex;
+}
+.client-list__item {
+  width: calc((100% - 150px) / 6);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-list_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+
+  color: $border-client;
+
+  border: 1px solid $border-client;
+  border-radius: 4px;
+  transition: fill $transition-specs, border-color $transition-specs;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0;
+  transition: color $transition-specs, background-color $transition-specs,
+    shadow $transition-specs;
+}
+
+.button.primary {
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  width: 200px;
+  height: 50px;
+  box-shadow: $box-shadowing-1;
+}
+
+.button.secondary {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $secondary-button-color;
+  color: $primary-text-color;
+  min-width: 73px;
+  height: 38px;
+  border: none;
+  display: inline-block;
+  padding: 6px 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    box-shadow: $box-shadowing-card;
+  }
+}
