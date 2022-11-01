@@ -1,8 +1,9 @@
 .hero {
+  display: flex;
+  align-items: center;
   text-align: center;
   background-color: $secondary-bg-color;
   height: 400px;
-  width: 100%;
 
   background-image: linear-gradient(
       to right,
@@ -64,7 +65,8 @@
 }
 
 .hero__title {
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   font-weight: 900;
   font-size: 26px;
@@ -78,14 +80,8 @@
   margin-top: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .hero__container {
     display: block;
     width: 360px;
   }
@@ -96,10 +92,14 @@
     display: flex;
     max-width: 1600px;
     align-items: center;
+
+    .hero__container {
+      display: block;
+      width: 696px;
+    }
   }
   .hero__title {
     display: block;
-    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;

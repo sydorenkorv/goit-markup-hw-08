@@ -889,10 +889,11 @@ svg {
   }
 }
 .hero {
+  display: flex;
+  align-items: center;
   text-align: center;
   background-color: #2f303a;
   height: 400px;
-  width: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile/hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -927,7 +928,8 @@ svg {
 }
 
 .hero__title {
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -940,13 +942,8 @@ svg {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__title {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .hero__container {
     display: block;
     width: 360px;
   }
@@ -957,9 +954,12 @@ svg {
     max-width: 1600px;
     align-items: center;
   }
-  .hero__title {
+  .hero .hero__container {
     display: block;
     width: 696px;
+  }
+  .hero__title {
+    display: block;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
