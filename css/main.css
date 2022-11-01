@@ -944,7 +944,7 @@ svg {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .hero__container {
     display: block;
     width: 360px;
