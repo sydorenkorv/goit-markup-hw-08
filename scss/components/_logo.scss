@@ -1,12 +1,10 @@
-.logo{
-    display: block;
-    font-family: 'Raleway';
-        font-size: 26px;
-        font-weight: 700;
-            color: $accent-color;
-&--color{
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  color: $accent-color;
+  &--color {
     color: $primary-text-color;
-}
-
-            
+  }
 }

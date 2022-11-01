@@ -1,18 +1,21 @@
 .page-footer {
   background: $secondary-bg-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
-.page-footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 480px) {
+  .page-footer .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 60px 0px;
+  }
 }
 
-.address-box {
-  display: block;
-  margin-right: 70px;
-}
+// .address-box {
+//   display: block;
+//   margin-right: 70px;
+// }
 
 .address-box .logo {
   margin-bottom: 20px;
@@ -25,7 +28,7 @@
 /* address */
 
 .contacts-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts-list__link {
@@ -50,6 +53,7 @@
 
 .page-footer .uptitle {
   color: $primary-white-color;
+  margin-top: 60px;
 }
 
 .page-footer .social-list {
@@ -66,5 +70,24 @@
   &:hover,
   &:focus {
     background-color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 76px 60px;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .page-footer .uptitle {
+    margin-top: 0;
+  }
+
+  .page-footer .subscription {
+    width: 100%;
+    padding-top: 60px;
   }
 }

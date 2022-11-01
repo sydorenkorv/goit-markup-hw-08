@@ -1,33 +1,93 @@
 .hero {
   text-align: center;
   background-color: var(--secondary-bg-color);
-  max-width: 1600px;
+  height: 400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 200px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero.jpg");
+    url(../../images/hero/hero-mobile/hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: $primary-white-color;
+  padding: 118px 60px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-mobile/hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-tablet/hero-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-tablet/hero-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-desktop/hero-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-desktop/hero-desktop@2x.jpg);
+    }
+  }
 }
 
 .hero__title {
+  display: block;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  max-width: 696px;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   margin: auto;
 }
 
-.hero__button.button {
+.hero__button {
   margin-top: 30px;
-  width: 216px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    display: block;
+    width: 360px;
+  }
 }

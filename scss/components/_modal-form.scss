@@ -15,7 +15,7 @@
 .modal-form__box {
   text-align: left;
 
-  width: 448px;
+  width: 370px;
 }
 
 .modal-form__label {
@@ -66,7 +66,7 @@
 
 .modal-form__comment {
   resize: none;
-  width: 448px;
+
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -83,7 +83,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-
+  font-size: 12px;
   line-height: 1.71;
   text-align: center;
   color: $secondary-text-color;
