@@ -450,6 +450,12 @@ svg {
 
 .team-meta {
   padding: 30px 0px;
+  align-items: center;
+}
+
+.team-meta .social-list {
+  display: flex;
+  justify-content: center;
 }
 
 .team-meta__name {
@@ -470,25 +476,6 @@ svg {
   .team-meta__position {
     font-size: 16px;
     line-height: 1.19;
-  }
-}
-
-.team-meta .social-list {
-  margin-top: 16px;
-}
-@media screen and (min-width: 480px) {
-  .team-meta .social-list {
-    padding: 0px 122px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-meta .social-list {
-    padding: 0px 74px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-meta .social-list {
-    padding: 0px 32px;
   }
 }
 

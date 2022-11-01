@@ -34,6 +34,12 @@
 
 .team-meta {
   padding: 30px 0px;
+  align-items: center;
+}
+
+.team-meta .social-list {
+  display: flex;
+  justify-content: center;
 }
 
 .team-meta__name {
@@ -52,18 +58,5 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.19;
-  }
-}
-
-.team-meta .social-list {
-  margin-top: 16px;
-  @media screen and (min-width: 480px) {
-    padding: 0px 122px;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 0px 74px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 0px 32px;
   }
 }
