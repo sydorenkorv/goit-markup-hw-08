@@ -16,6 +16,10 @@
   text-align: left;
 
   width: 370px;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .modal-form__label {
@@ -88,6 +92,11 @@
   text-align: center;
   color: $secondary-text-color;
   transition: background-color $transition-specs;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     content: "";

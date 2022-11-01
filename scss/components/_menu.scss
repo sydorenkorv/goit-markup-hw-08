@@ -26,6 +26,7 @@
   background-color: $primary-white-color;
   transform: translateX(0%);
   transition: transform $transition-specs;
+  text-align: left;
 
   &.is-open {
     transform: translateX(100%);

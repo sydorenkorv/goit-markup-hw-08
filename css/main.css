@@ -186,6 +186,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  margin: 0 auto;
   background-color: #ffffff;
   letter-spacing: 0.03em;
   line-height: 1.14;
@@ -203,9 +204,19 @@ svg {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
   color: #212121;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
 }
 
 .section {
@@ -215,6 +226,7 @@ svg {
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -240,8 +252,8 @@ svg {
   }
   .header .container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     align-items: center;
   }
 }
@@ -324,6 +336,7 @@ svg {
   background-color: #ffffff;
   transform: translateX(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
 }
 .mm-container.is-open {
   transform: translateX(100%);
@@ -428,6 +441,7 @@ svg {
 @media screen and (min-width: 1200px) {
   .team-list__item {
     flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
   }
 }
 
@@ -449,13 +463,29 @@ svg {
   font-size: 14px;
   line-height: 1.19;
 }
+@media screen and (min-width: 1200px) {
+  .team-meta__position {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
 
 .team-meta .social-list {
   margin-top: 16px;
 }
+@media screen and (min-width: 480px) {
+  .team-meta .social-list {
+    padding: 0px 122px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-meta .social-list {
-    padding: 0 74px;
+    padding: 0px 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-meta .social-list {
+    padding: 0px 32px;
   }
 }
 
@@ -504,7 +534,6 @@ svg {
 
 .subscribe__input {
   height: 50px;
-  width: 450px;
   padding: 15px;
   color: #ffffff;
   background-color: transparent;
@@ -516,6 +545,11 @@ svg {
 }
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 
 .subscribe__button {
@@ -548,6 +582,12 @@ svg {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button-close {
@@ -586,6 +626,11 @@ svg {
 .modal-form__box {
   text-align: left;
   width: 370px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__box {
+    width: 448px;
+  }
 }
 
 .modal-form__label {
@@ -653,6 +698,12 @@ svg {
   text-align: center;
   color: #757575;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal-form-checkbox-label::before {
   content: "";
@@ -771,9 +822,72 @@ svg {
     fill: #2196f3;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-container {
+    height: 80px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+    gap: 50px;
+  }
+  .site-nav__link {
+    display: block;
+    color: #212121;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    padding: 32px 0px;
+  }
+  .site-nav__link:hover, .site-nav__link:focus {
+    color: #2196f3;
+  }
+  .site-nav__link--current {
+    position: relative;
+    display: inline-block;
+    color: #2196f3;
+  }
+  .site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+  }
+  .contacts-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .contacts-nav__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .contacts-nav__link {
+    display: flex;
+    align-items: center;
+    padding: 32px 0px;
+    color: #757575;
+    font-weight: 500;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-nav__link:hover, .contacts-nav__link:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
 .hero {
   text-align: center;
-  background-color: var(--secondary-bg-color);
+  background-color: #2f303a;
   height: 400px;
   width: 100%;
   margin: 0 auto;
@@ -819,7 +933,7 @@ svg {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .hero__button {
@@ -837,6 +951,23 @@ svg {
     width: 360px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: flex;
+    max-width: 1600px;
+    align-items: center;
+  }
+  .hero__title {
+    display: block;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .hero__button.button {
+    width: 216px;
+  }
+}
 .features-list {
   display: flex;
 }
@@ -845,8 +976,10 @@ svg {
   margin-bottom: 10px;
 }
 
-.features-list__item {
-  padding-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 1199) {
+  .features-list__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
 }
 
 .features-list__icon-box {
@@ -871,9 +1004,23 @@ svg {
   color: #757575;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .features-list {
     flex-direction: column;
+  }
+  .features-list__icon-box {
+    flex-basis: calc((100% - 30px) / 1);
+    padding: 15px;
+  }
+  .features-list {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    flex-wrap: wrap;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -890,6 +1037,17 @@ svg {
     flex-basis: calc((100% - 60px) / 2);
     flex-wrap: wrap;
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__icon-box {
+    height: 120px;
+    width: 270px;
+  }
+  .features-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+    width: 270px;
+    text-align: left;
   }
 }
 .scope {
@@ -925,13 +1083,21 @@ svg {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .scope {
     display: block;
   }
+  .team.section {
+    padding-top: 0;
+  }
 }
-.team {
+.team.section {
   background: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team.section {
+    padding-top: 94px;
+  }
 }
 
 .team-list {
@@ -951,6 +1117,12 @@ svg {
 @media screen and (min-width: 768px) {
   .client-list__item {
     width: 226px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list__item {
+    width: 170px;
     margin: 15px;
   }
 }
@@ -1032,7 +1204,7 @@ svg {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer .container {
     flex-direction: row;
     justify-content: space-between;
@@ -1046,5 +1218,47 @@ svg {
   .page-footer .subscription {
     width: 100%;
     padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 60px 15px;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-align: left;
+  }
+  .page-footer .address-box {
+    display: block;
+  }
+  .page-footer .social {
+    display: block;
+    margin-left: 60px;
+  }
+  .page-footer .uptitle {
+    margin-top: 0px;
+  }
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .page-footer .subscription {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 93px;
+  }
+  .page-footer .subscribe {
+    display: flex;
+  }
+  .page-footer .subscription-title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .subscribe__input {
+    width: 358px;
+  }
+  .page-footer .subscribe__button {
+    margin: 0px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -15,7 +15,6 @@
 
 .subscribe__input {
   height: 50px;
-  width: 450px;
   padding: 15px;
   color: $primary-white-color;
   background-color: transparent;
@@ -28,6 +27,10 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 }
 

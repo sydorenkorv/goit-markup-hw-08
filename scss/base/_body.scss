@@ -37,6 +37,7 @@ body {
     weight: 400;
     size: 14px;
   }
+  margin: 0 auto;
   background-color: $primary-white-color;
   letter-spacing: 0.03em;
   line-height: 1.14;
@@ -60,7 +61,14 @@ svg {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
   color: $primary-text-color;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
 }
