@@ -1,5 +1,6 @@
 .features-list {
   display: flex;
+  flex-direction: column;
 }
 
 .features-list__uptitle {
@@ -10,6 +11,11 @@
   @media screen and (min-width: 480px) and (max-width: 1199) {
     padding-bottom: 30px;
   }
+}
+
+.features-list__icon-box {
+  flex-basis: calc((100% - 30px) / 1);
+  padding: 15px;
 }
 
 .features-list__icon-box {

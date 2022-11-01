@@ -27,6 +27,7 @@
   transform: translateX(0%);
   transition: transform $transition-specs;
   text-align: left;
+  z-index: 1;
 
   &.is-open {
     transform: translateX(100%);

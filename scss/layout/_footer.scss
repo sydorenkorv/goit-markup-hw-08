@@ -2,14 +2,12 @@
   background: $secondary-bg-color;
 }
 
-@media screen and (min-width: 480px) {
-  .page-footer .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 60px 0px;
-  }
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 60px 0px;
 }
 
 // .address-box {
