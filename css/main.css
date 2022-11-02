@@ -378,12 +378,6 @@ svg {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .mm-contacts {
-    padding-top: 302px;
-    margin-bottom: 64px;
-  }
-}
 .mm-contacts__link {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -651,7 +645,6 @@ svg {
 
 .modal-form__box {
   text-align: left;
-  width: 370px;
 }
 @media screen and (min-width: 1200px) {
   .modal-form__box {
@@ -1395,4 +1388,9 @@ svg {
   line-height: 1.5555555556;
   color: #ffffff;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 479px) {
+  .portfolio-blocks__overlay-description {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

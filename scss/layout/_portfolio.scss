@@ -128,4 +128,8 @@
   line-height: calc(28 / 18);
   color: $primary-white-color;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
