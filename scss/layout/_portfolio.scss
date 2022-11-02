@@ -38,6 +38,7 @@
 
 .portfolio-blocks__item {
   transition: box-shadow $transition-specs;
+  border: 1px solid #eeeeee;
 
   &:hover,
   &:focus {
@@ -65,8 +66,6 @@
   text-align: left;
   padding: 20px 24px;
   background-color: $primary-white-color;
-  border: 1px solid #eeeeee;
-  border-top: transparent;
 }
 
 .portfolio-blocks__sample {
