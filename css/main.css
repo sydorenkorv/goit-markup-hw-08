@@ -669,6 +669,7 @@ svg {
 }
 
 .modal-form__input {
+  padding-left: 40px;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
