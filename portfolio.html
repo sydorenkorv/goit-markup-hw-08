@@ -22,14 +22,12 @@
 
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__link site-nav__link--current link"
-                >Студія</a
-              >
+              <a href="./index.html" class="site-nav__link link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link"
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current link"
                 >Портфоліо</a
               >
             </li>
@@ -98,14 +96,14 @@
           </button>
           <ul class="mm-nav list">
             <li class="mm-nav__item">
-              <a
-                href="./index.html"
-                class="mm-nav__link mm-nav__link--current link"
-                >Студія</a
-              >
+              <a href="./index.html" class="mm-nav__link link">Студія</a>
             </li>
             <li class="mm-nav__item">
-              <a href="./portfolio.html" class="mm-nav__link link">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="mm-nav__link mm-nav__link--current link"
+                >Портфоліо</a
+              >
             </li>
             <li class="mm-nav__item">
               <a href="#" class="mm-nav__link link">Контакти</a>
@@ -172,29 +170,29 @@
         <div class="container">
           <h1 class="hidden">Filter</h1>
           <ul class="portfolio-buttons">
-            <li>
+            <li class="portfolio-buttons__item">
               <button
                 class="portfolio-buttons__button portfolio-buttons__button--current button secondary"
               >
                 Усі
               </button>
             </li>
-            <li>
+            <li class="portfolio-buttons__item">
               <button class="portfolio-buttons__button button secondary">
                 Веб-сайти
               </button>
             </li>
-            <li>
+            <li class="portfolio-buttons__item">
               <button class="portfolio-buttons__button button secondary">
                 Додатки
               </button>
             </li>
-            <li>
+            <li class="portfolio-buttons__item">
               <button class="portfolio-buttons__button button secondary">
                 Дизайн
               </button>
             </li>
-            <li>
+            <li class="portfolio-buttons__item">
               <button class="portfolio-buttons__button button secondary">
                 Маркетинг
               </button>
@@ -205,11 +203,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/01.jpg"
-                    width="370"
-                    alt="Laptop"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/01-desktop.jpg    1x,
+                        ./images/portfolio/desktop/01-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/01-tablet.jpg    1x,
+                        ./images/portfolio/tablet/01-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/01-mobile.jpg    1x,
+                        ./images/portfolio/mobile/01-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/01-mobile.jpg"
+                      alt="Website on a laptop"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -228,11 +252,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/02.jpg"
-                    width="370"
-                    alt="Basketbal players"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/02-desktop.jpg    1x,
+                        ./images/portfolio/desktop/02-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/02-tablet.jpg    1x,
+                        ./images/portfolio/tablet/02-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/02-mobile.jpg    1x,
+                        ./images/portfolio/mobile/02-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/02-mobile.jpg"
+                      alt="Basketball playes"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -253,11 +303,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/03.jpg"
-                    width="370"
-                    alt="Restaurant logo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/05-desktop.jpg    1x,
+                        ./images/portfolio/desktop/05-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/05-tablet.jpg    1x,
+                        ./images/portfolio/tablet/05-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/05-mobile.jpg    1x,
+                        ./images/portfolio/mobile/05-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/05-mobile.jpg"
+                      alt="Desktop screen"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -276,11 +352,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/04.jpg"
-                    width="370"
-                    alt="Headset"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/04-desktop.jpg    1x,
+                        ./images/portfolio/desktop/04-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/04-tablet.jpg    1x,
+                        ./images/portfolio/tablet/04-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/04-mobile.jpg    1x,
+                        ./images/portfolio/mobile/04-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/04-mobile.jpg"
+                      alt="Headset"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -299,11 +401,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/05.jpg"
-                    width="370"
-                    alt="Two boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/05-desktop.jpg    1x,
+                        ./images/portfolio/desktop/05-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/05-tablet.jpg    1x,
+                        ./images/portfolio/tablet/05-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/05-mobile.jpg    1x,
+                        ./images/portfolio/mobile/05-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/05-mobile.jpg"
+                      alt="Boxes"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -322,11 +450,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/06.jpg"
-                    width="370"
-                    alt="Website concept on the screen"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/06-desktop.jpg    1x,
+                        ./images/portfolio/desktop/06-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/06-tablet.jpg    1x,
+                        ./images/portfolio/tablet/06-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/06-mobile.jpg    1x,
+                        ./images/portfolio/mobile/06-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/06-mobile.jpg"
+                      alt="Display"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -347,11 +501,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/07.jpg"
-                    width="370"
-                    alt="Opened book"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/07-desktop.jpg    1x,
+                        ./images/portfolio/desktop/07-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/07-tablet.jpg    1x,
+                        ./images/portfolio/tablet/07-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/07-mobile.jpg    1x,
+                        ./images/portfolio/mobile/07-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/07-mobile.jpg"
+                      alt="Book"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -372,11 +552,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/08.jpg"
-                    width="370"
-                    alt="Label"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/08-desktop.jpg    1x,
+                        ./images/portfolio/desktop/08-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/08-tablet.jpg    1x,
+                        ./images/portfolio/tablet/08-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/08-mobile.jpg    1x,
+                        ./images/portfolio/mobile/08-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/08-mobile.jpg"
+                      alt="Label"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -395,11 +601,37 @@
             <li class="portfolio-blocks__item">
               <a href="#" class="link">
                 <div class="portfolio-blocks__thumb">
-                  <img
-                    src="./images/portfolio/09.jpg"
-                    width="370"
-                    alt="Working with laptop"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/09-desktop.jpg    1x,
+                        ./images/portfolio/desktop/09-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/09-tablet.jpg    1x,
+                        ./images/portfolio/tablet/09-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/09-mobile.jpg    1x,
+                        ./images/portfolio/mobile/09-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio-list__img"
+                      src="/images/portfolio/mobile/09-mobile.jpg"
+                      alt="Working with laptop"
+                    />
+                  </picture>
                   <div class="portfolio-blocks__thumb-info">
                     <p class="portfolio-blocks__overlay-description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
