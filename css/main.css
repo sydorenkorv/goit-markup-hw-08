@@ -1010,10 +1010,11 @@ svg {
 
 .features-list__uptitle {
   margin-bottom: 10px;
+  text-align: start;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .features-list__uptitle {
-    text-align: start;
+    text-align: center;
   }
 }
 

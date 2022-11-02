@@ -19,8 +19,9 @@
 
 .features-list__uptitle {
   margin-bottom: 10px;
-  @media screen and (max-width: 767px) {
-    text-align: start;
+  text-align: start;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
   }
 }
 
