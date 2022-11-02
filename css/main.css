@@ -1016,7 +1016,7 @@ svg {
   text-align: left;
 }
 @media screen and (max-width: 799px) {
-  .features-list__item:not(last-child) {
+  .features-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

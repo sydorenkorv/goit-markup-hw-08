@@ -31,7 +31,7 @@
 .features-list__item {
   text-align: left;
   @media screen and (max-width: 799px) {
-    &:not(last-child) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
