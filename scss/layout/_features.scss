@@ -1,6 +1,6 @@
 .features-list {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -20,7 +20,7 @@
 .features-list__uptitle {
   margin-bottom: 10px;
   @media screen and (max-width: 767px) {
-    text-align: center;
+    text-align: start;
   }
 }
 

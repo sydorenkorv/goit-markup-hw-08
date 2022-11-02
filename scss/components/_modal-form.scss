@@ -117,10 +117,6 @@
       border-color: transparent;
       transition: background-color $transition-specs, border $transition-specs;
     }
-
-    .modal-form-checkbox:focus + & {
-      border: 2px solid $accent-color;
-    }
   }
 }
 
